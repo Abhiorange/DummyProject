@@ -1,0 +1,72 @@
+﻿@model TestApp.Models.ViewModels.LoginViewModel
+<head>
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+</head>
+<body>
+    <div>
+    @if (TempData["success"] != null)
+    {
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+        <script type="text/javascript">
+            toastr.success('@TempData["success"]');
+        </script>
+    }
+</div>
+<div class="container border mt-5">
+    <div class="row" style="background-color: cornsilk;">
+        <div class="col d-flex p-3 justify-content-center">
+            <div class="d-flex flex-column">
+                <span class="rounded-circle bg-danger mx-auto p-3 text-white" style="width:57px"><i class="bi bi-lock ms-1"></i></span>
+                <span>Login to your account</span>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color: whitesmoke;">
+        <div class="col-md-6 ps-md-5 ms-md-2">
+                @if (ViewData["ErrorMessage"] != null)
+                {
+                    <span class="text-danger">@ViewData["ErrorMessage"]</span>
+                }
+                <form method="post" asp-action="Login" asp-controller="home">
+                    <input value=@ViewData["returnurl"] name="ReturnUrl" hidden />
+            <div class="d-flex flex-column my-2">
+                <label>Email<span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" asp-for="Email">
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="d-flex flex-column my-2">
+                <label>Password<span class="text-danger">*</span></label>
+                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" asp-for="Password">
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="my-2">
+                <span>Forget Your PAssword?</span>
+            </div>
+            <div class="d-flex my-3">
+                <input type="checkbox" class="me-2">
+                <span>Stay Logged in</span>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-danger my-3 loginstyle" style="width:203px;">login</button>
+            </div>
+            </form>
+           @* <hr style="width:190%"/>*@
+            <div>
+                <span style="font-size: 23px;">New To Aramex?</span>
+            </div>
+            <div>
+                    <a type="button" asp-action="Register" asp-controller="Home" class="btn btn-secondary my-3 accountstyle" style="width:203px;">Create An Account</a>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    }
+    </body>

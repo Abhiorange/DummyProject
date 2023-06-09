@@ -1,0 +1,59 @@
+﻿<div>
+    @if (TempData["success"] != null)
+    {
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+        <script type="text/javascript">
+            toastr.success('@TempData["success"]');
+        </script>
+    }
+</div>
+<div class="container mt-5 border">
+    <div class="row" style="background-color: white;">
+        <div class="col d-flex p-3 justify-content-center">
+            <div class="d-flex flex-column">
+                <span class="rounded-circle bg-danger mx-auto p-3 text-white" style="width:57px">
+                    <i class="bi bi-lock ms-1"></i>
+                </span>
+                <span>Select options</span>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="background-color: whitesmoke;">
+        <div class="my-3 col-6 ps-5 ms-2">
+            <div class="d-flex flex-column my-2">
+                <label>Select Branch<span class="text-danger">*</span></label>
+                <select class="form-select">
+                    <option value="4"></option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="d-flex flex-column my-2">
+                <label>Select Route<span class="text-danger">*</span></label>
+                <select class="form-select">
+                    <option value="4"></option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="d-flex flex-column my-2">
+                <label>Select Vehicle<span class="text-danger">*</span></label>
+                <select class="form-select">
+                    <option value="4"></option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div>
+                <button type="button" class="btn btn-danger my-3" style="width:203px;">Submit</button>
+            </div>
+        </div>
+        <div class="col-6">
+        </div>
+    </div>
+</div>
