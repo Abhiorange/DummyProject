@@ -1,0 +1,15 @@
+D:\TestApp\DataRepository\bin\Debug\net6.0\DataRepository.deps.json
+D:\TestApp\DataRepository\bin\Debug\net6.0\DataRepository.dll
+D:\TestApp\DataRepository\bin\Debug\net6.0\DataRepository.pdb
+D:\TestApp\DataRepository\obj\Debug\net6.0\DataRepository.csproj.AssemblyReference.cache
+D:\TestApp\DataRepository\obj\Debug\net6.0\DataRepository.GeneratedMSBuildEditorConfig.editorconfig
+D:\TestApp\DataRepository\obj\Debug\net6.0\DataRepository.AssemblyInfoInputs.cache
+D:\TestApp\DataRepository\obj\Debug\net6.0\DataRepository.AssemblyInfo.cs
+D:\TestApp\DataRepository\obj\Debug\net6.0\DataRepository.csproj.CoreCompileInputs.cache
+D:\TestApp\DataRepository\obj\Debug\net6.0\DataRepository.dll
+D:\TestApp\DataRepository\obj\Debug\net6.0\refint\DataRepository.dll
+D:\TestApp\DataRepository\obj\Debug\net6.0\DataRepository.pdb
+D:\TestApp\DataRepository\obj\Debug\net6.0\ref\DataRepository.dll
+D:\TestApp\DataRepository\bin\Debug\net6.0\DataModels.dll
+D:\TestApp\DataRepository\bin\Debug\net6.0\DataModels.pdb
+D:\TestApp\DataRepository\obj\Debug\net6.0\DataRepository.csproj.CopyComplete

@@ -1,0 +1,14 @@
+D:\TestApp\DataModels\bin\Debug\net6.0\DataModels.deps.json
+D:\TestApp\DataModels\bin\Debug\net6.0\DataModels.dll
+D:\TestApp\DataModels\bin\Debug\net6.0\DataModels.pdb
+D:\TestApp\DataModels\obj\Debug\net6.0\DataModels.csproj.AssemblyReference.cache
+D:\TestApp\DataModels\obj\Debug\net6.0\DataModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\TestApp\DataModels\obj\Debug\net6.0\DataModels.AssemblyInfoInputs.cache
+D:\TestApp\DataModels\obj\Debug\net6.0\DataModels.AssemblyInfo.cs
+D:\TestApp\DataModels\obj\Debug\net6.0\DataModels.csproj.CoreCompileInputs.cache
+D:\TestApp\DataModels\obj\Debug\net6.0\DataModels.dll
+D:\TestApp\DataModels\obj\Debug\net6.0\refint\DataModels.dll
+D:\TestApp\DataModels\obj\Debug\net6.0\DataModels.pdb
+D:\TestApp\DataModels\obj\Debug\net6.0\ref\DataModels.dll
+D:\TestApp\DataModels\bin\Debug\net6.0\DataModels.runtimeconfig.json
+D:\TestApp\DataModels\obj\Debug\net6.0\DataModels.genruntimeconfig.cache

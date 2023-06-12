@@ -1,4 +1,7 @@
-using Aramex.DataModels;
+
+using DataModels.DataModel;
+using DataRepository;
+using DataRepository.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<AramexContext>();
+builder.Services.AddScoped<IUser, UserRepository>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

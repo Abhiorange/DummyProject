@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace Aramex.DataModels;
+namespace DataModels.DataModel;
 
 public partial class AramexContext : DbContext
 {

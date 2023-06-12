@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Aramex.DataModels;
+namespace DataModels.DataModel;
 
 public partial class User
 {

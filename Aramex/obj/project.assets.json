@@ -1147,6 +1147,32 @@
             "rid": "win"
           }
         }
+      },
+      "DataModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0-preview.4.23259.3"
+        },
+        "compile": {
+          "bin/placeholder/DataModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataModels.dll": {}
+        }
+      },
+      "DataRepository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DataModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataRepository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataRepository.dll": {}
+        }
       }
     }
   },
@@ -3118,10 +3144,22 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "DataModels/1.0.0": {
+      "type": "project",
+      "path": "../DataModels/DataModels.csproj",
+      "msbuildProject": "../DataModels/DataModels.csproj"
+    },
+    "DataRepository/1.0.0": {
+      "type": "project",
+      "path": "../DataRepository/DataRepository.csproj",
+      "msbuildProject": "../DataRepository/DataRepository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DataModels >= 1.0.0",
+      "DataRepository >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.0-preview.4.23259.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.0-preview.4.23259.3",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.0-preview.4.23259.3",
@@ -3162,7 +3200,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\TestApp\\DataModels\\DataModels.csproj": {
+              "projectPath": "D:\\TestApp\\DataModels\\DataModels.csproj"
+            },
+            "D:\\TestApp\\DataRepository\\DataRepository.csproj": {
+              "projectPath": "D:\\TestApp\\DataRepository\\DataRepository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

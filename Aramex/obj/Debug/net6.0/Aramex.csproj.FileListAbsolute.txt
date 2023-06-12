@@ -172,3 +172,7 @@ D:\TestApp\Aramex\obj\Debug\net6.0\refint\Aramex.dll
 D:\TestApp\Aramex\obj\Debug\net6.0\Aramex.pdb
 D:\TestApp\Aramex\obj\Debug\net6.0\Aramex.genruntimeconfig.cache
 D:\TestApp\Aramex\obj\Debug\net6.0\ref\Aramex.dll
+D:\TestApp\Aramex\bin\Debug\net6.0\DataRepository.dll
+D:\TestApp\Aramex\bin\Debug\net6.0\DataRepository.pdb
+D:\TestApp\Aramex\bin\Debug\net6.0\DataModels.dll
+D:\TestApp\Aramex\bin\Debug\net6.0\DataModels.pdb

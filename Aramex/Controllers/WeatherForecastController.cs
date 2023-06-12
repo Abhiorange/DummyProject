@@ -1,5 +1,5 @@
-using Aramex.DataModels;
-using Aramex.ViewModels;
+/*using Aramex.DataModels;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -33,36 +33,6 @@ namespace Aramex.Controllers
             })
             .ToArray();
         }
-       /* [HttpPost]
-        public IActionResult Login(LoginViewModel model)
-        {
-            if (model == null)
-            {
-                return BadRequest("Employee null here");
-            }
-            else
-            {
-               var user=_aramexContext.Users.FirstOrDefault(u=>u.Email.Equals(model.Email.ToLower()));
-                if (user == null)
-                {
-                    return Content("user does not exist");
-                }
-                var userpassword = _aramexContext.Users.FirstOrDefault(u => u.Password.Equals(model.Password) && u.Email.Equals(model.Email.ToLower()));
-                if (userpassword == null)
-                {
-                    return Content("password is not correct");
-                }
-                else
-                {
-                    var passwordsMatch = string.Compare(model.Password, userpassword.Password, StringComparison.Ordinal) == 0;
-                    if (passwordsMatch == false)
-                    {
-                        return Content("password is not correct");
-                    }
-                }
-              
-                return Ok("User is Authenticated");
-            }
-        }*/
+     
     }
-}
+}*/

@@ -1,5 +1,4 @@
-﻿
-using AramexApp.Models.ViewModels;
+﻿using AramexApp.Models.ViewModels;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
@@ -135,7 +134,7 @@ namespace TestApp.Controllers
                         else
                         {
                             TempData["success"] = "registartion is done succesfully";
-                            return RedirectToAction("Login");
+                            return RedirectToAction("Index");
                         }
                         
                     }

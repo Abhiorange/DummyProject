@@ -5,7 +5,11 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AramexApp", "TestApp\AramexApp.csproj", "{F0F1FC65-0D4A-4A88-98AC-2557D000F421}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aramex", "Aramex\Aramex.csproj", "{6C0B2A55-41F3-435C-B114-12F30FE26D96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aramex", "Aramex\Aramex.csproj", "{6C0B2A55-41F3-435C-B114-12F30FE26D96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataRepository", "DataRepository\DataRepository.csproj", "{0EE40F22-7CA0-4D89-86A9-820256F95B41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModels", "DataModels\DataModels.csproj", "{66AB0B87-80E3-4226-96EF-D4DF14C09D4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{6C0B2A55-41F3-435C-B114-12F30FE26D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C0B2A55-41F3-435C-B114-12F30FE26D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C0B2A55-41F3-435C-B114-12F30FE26D96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE40F22-7CA0-4D89-86A9-820256F95B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE40F22-7CA0-4D89-86A9-820256F95B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE40F22-7CA0-4D89-86A9-820256F95B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE40F22-7CA0-4D89-86A9-820256F95B41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66AB0B87-80E3-4226-96EF-D4DF14C09D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66AB0B87-80E3-4226-96EF-D4DF14C09D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66AB0B87-80E3-4226-96EF-D4DF14C09D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66AB0B87-80E3-4226-96EF-D4DF14C09D4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

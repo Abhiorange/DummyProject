@@ -1,5 +1,6 @@
-﻿using Aramex.DataModels;
-using Aramex.ViewModels;
+﻿using DataModels.DataModel;
+using DataModels.ViewModels;
+using DataRepository.Interface;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Aramex.Controllers
@@ -10,10 +11,12 @@ namespace Aramex.Controllers
     {
         private readonly ILogger<UserController> _logger;
         private readonly AramexContext _aramexContext;
-        public UserController(ILogger<UserController> logger, AramexContext aramexContext)
+        private readonly IUser _userrepo;
+        public UserController(ILogger<UserController> logger, AramexContext aramexContext,IUser userrepo)
         {
             _logger = logger;
             _aramexContext = aramexContext;
+            _userrepo = userrepo;
         }
 
         [HttpPost]
@@ -25,27 +28,18 @@ namespace Aramex.Controllers
             }
             else
             {
-                var user = _aramexContext.Users.FirstOrDefault(u => u.Email.Equals(model.Email.ToLower()));
-                if (user == null)
-                {
-                    return Content("false");
-                }
-                var userpassword = _aramexContext.Users.FirstOrDefault(u => u.Password.Equals(model.Password) && u.Email.Equals(model.Email.ToLower()));
-                if (userpassword == null)
+                var user = _userrepo.Login(model);
+                if(user == null)
                 {
                     return Content("false");
                 }
                 else
                 {
-                    var passwordsMatch = string.Compare(model.Password, userpassword.Password, StringComparison.Ordinal) == 0;
-                    if (passwordsMatch == false)
-                    {
-                        return Content("false");
-                    }
+                    return Ok(user);
                 }
-
-                return Ok(userpassword);
+                
             }
+            
         }
         [HttpPost]
         public IActionResult Register(RegisterViewModel model)
@@ -54,24 +48,16 @@ namespace Aramex.Controllers
             {
                 return BadRequest("Model null here");
             }
-            var existingUser = _aramexContext.Users.FirstOrDefault(u => u.Email == model.Email);
-
-            if (existingUser != null)
+            var response = _userrepo.Register(model);
+            if(response==false)
             {
                 return Content("false");
             }
             else
             {
-                var user = new User
-                {
-                    Email= model.Email,
-                    UserName=model.UserName,
-                    Password=model.Password,
-                };
-                _aramexContext.Add(user);
-                _aramexContext.SaveChanges();
                 return Ok("Employee Added SuccessFully");
             }
+         
         }
     }
 }
